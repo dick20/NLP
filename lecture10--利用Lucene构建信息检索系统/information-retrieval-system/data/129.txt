@@ -1,0 +1,17 @@
+采取一定措施使变得优异。
+为了更加优秀而“去其糟粕，取其精华”；
+为了在某一方面更加出色而去其糟粕；
+为了在某方面更优秀而放弃其他不太重要的方面；
+使某人/某物变得更优秀的方法/技术等；
+在计算机算法领域，优化往往是指通过算法得到要求问题的更优解。
+词语：优化
+拼音：yōuhuà
+◎ 优化 yōuhuà
+采取一定措施使变得优秀
+SEO-Answer：&lt;Majorization&gt; &lt;Optimizing&gt; &lt;Optimization&gt;
+1. 它也把新的优化细节合并到特殊服务器与本地数据库格式中。
+It also incorporate new optimization specific to particular server and local database format.
+2. 优化32位本机代码编译器使应用程序加快了300%－400%。
+Optimize32 bit native code compiler with up to300%-400% faster application.
+3. 在优化问题中，一种表示若干变量相互关系的方程（式）或不等式。
+An equation or inequality relating the variables in an optimization problem.

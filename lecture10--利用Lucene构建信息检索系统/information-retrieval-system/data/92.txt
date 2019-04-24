@@ -1,0 +1,4 @@
+GOFAI (Good Old-Fashioned Artificial Intelligence) 有效的老式人工智能。
+人工智能领域， GOFAI 泛指用最原始的人工智能的逻辑方法解决小领域的问题， 例如棋类游戏的算法。
+GOFAI最早出现于1986年，John Haugeland的Artificial Intelligence: The Very Idea. 其主要内容诠释了人工智能的哲学意义。
+人工智能是否可以使用高级符号表达，如词和想法？还是需要“子符号”的处理？JOHN HAUGELAND提出了GOFAI(出色的老式人工智能)的概念，也提议人工智能应归类为SYNTHETIC INTELLIGENCE，这个概念后来被某些非GOFAI研究者采纳。

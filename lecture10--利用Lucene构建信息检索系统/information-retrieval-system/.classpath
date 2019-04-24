@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java_d"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/analysis/common/lucene-analyzers-common-8.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/analysis/smartcn/lucene-analyzers-smartcn-8.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/core/lucene-core-8.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/highlighter/lucene-highlighter-8.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/queries/lucene-queries-8.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/queryparser/lucene-queryparser-8.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
