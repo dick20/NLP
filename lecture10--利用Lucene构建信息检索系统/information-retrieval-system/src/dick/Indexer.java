@@ -1,4 +1,5 @@
 package dick;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileReader;
@@ -6,6 +7,7 @@ import java.io.IOException;
 import java.nio.file.FileSystems;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -28,7 +30,7 @@ public class Indexer {
       Directory indexDirectory = FSDirectory.open(FileSystems.getDefault().getPath(indexDirectoryPath));
 
       //create the indexer
-      Analyzer analyzer = new StandardAnalyzer();
+      Analyzer analyzer = new SmartChineseAnalyzer();
       IndexWriterConfig config = new IndexWriterConfig(analyzer);
       writer = new IndexWriter(indexDirectory, config);
    }
@@ -39,13 +41,22 @@ public class Indexer {
 
    private Document getDocument(File file) throws IOException{
       Document document = new Document();
-
-      //index file contents
+      
       FieldType fieldType = new FieldType();
       fieldType.setStored(true);
       fieldType.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS);
       
-      Field contentField = new Field(LuceneConstants.CONTENTS, new FileReader(file),fieldType);
+      // file 转 string
+      StringBuffer buffer = new StringBuffer();
+      BufferedReader bf= new BufferedReader(new FileReader(file));
+      String s = null;
+      while((s = bf.readLine())!=null){//使用readLine方法，一次读一行
+          buffer.append(s.trim());
+      }
+
+      String xml = buffer.toString();
+      //index file contents
+      Field contentField = new Field(LuceneConstants.CONTENTS, xml,fieldType);
       //index file name
       Field fileNameField = new Field(LuceneConstants.FILE_NAME,file.getName(),fieldType);
       //index file path
@@ -71,7 +82,7 @@ public class Indexer {
       
       int count = 0;
       for (File file : files) {
-    	  System.out.println(file);
+//    	  System.out.println(file);
          if(!file.isDirectory()
             && !file.isHidden()
             && file.exists()
