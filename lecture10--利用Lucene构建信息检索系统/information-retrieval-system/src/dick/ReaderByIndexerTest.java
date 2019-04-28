@@ -29,7 +29,6 @@ import org.apache.lucene.store.FSDirectory;
 /**
  * 
  * 通过索引字段来读取文档
- * @author LXY
  *
  */
 public class ReaderByIndexerTest {
