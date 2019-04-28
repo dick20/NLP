@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asus/Desktop/自然语言处理/lec10/lucene-8.0.0/suggest/lucene-suggest-8.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
