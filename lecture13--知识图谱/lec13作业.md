@@ -4,13 +4,13 @@
 
 在bing的搜索结果：
 
-![1](C:\Users\asus\Desktop\1.jpg)
+![1](C:\Users\asus\Desktop\NLP\lecture13--知识图谱\1.jpg)
 
 在百度的搜索结果：
 
-![2](C:\Users\asus\Desktop\2.jpg)
 
 
+![2](C:\Users\asus\Desktop\NLP\lecture13--知识图谱\2.jpg)
 
 **对比可以看出：百度搜索引擎引入了知识图谱来帮助搜索，能直接给出结果。而必应搜索引擎只是简单的基于字符串模糊匹配搜索**
 
@@ -20,7 +20,7 @@
 
 上交所画 RDF 图，并适当说明。不能用手画，需要使用画图工具操作。
 
-![3](C:\Users\asus\Desktop\3.png)
 
 
+![3](C:\Users\asus\Desktop\NLP\lecture13--知识图谱\3.png)
 
