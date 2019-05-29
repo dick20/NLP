@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.sysu_kg_hw13.com#"
+     xml:base="http://www.sysu_kg_hw13.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.sysu_kg_hw13.com#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.sysu_kg_hw13.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#学校包含校区 -->
+
+    <owl:ObjectProperty rdf:about="http://www.sysu_kg_hw13.com#学校包含校区">
+        <owl:inverseOf rdf:resource="http://www.sysu_kg_hw13.com#校区属于学校"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.sysu_kg_hw13.com#学校"/>
+        <rdfs:range rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#学院属于校园 -->
+
+    <owl:ObjectProperty rdf:about="http://www.sysu_kg_hw13.com#学院属于校园">
+        <owl:inverseOf rdf:resource="http://www.sysu_kg_hw13.com#校园包含学院"/>
+        <rdfs:domain rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+        <rdfs:range rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#校区包含校园 -->
+
+    <owl:ObjectProperty rdf:about="http://www.sysu_kg_hw13.com#校区包含校园">
+        <owl:inverseOf rdf:resource="http://www.sysu_kg_hw13.com#校园属于校区"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+        <rdfs:range rdf:resource="http://www.sysu_kg_hw13.com#校园"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#校区属于学校 -->
+
+    <owl:ObjectProperty rdf:about="http://www.sysu_kg_hw13.com#校区属于学校">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+        <rdfs:range rdf:resource="http://www.sysu_kg_hw13.com#学校"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#校园包含学院 -->
+
+    <owl:ObjectProperty rdf:about="http://www.sysu_kg_hw13.com#校园包含学院">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.sysu_kg_hw13.com#校园"/>
+        <rdfs:range rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#校园属于校区 -->
+
+    <owl:ObjectProperty rdf:about="http://www.sysu_kg_hw13.com#校园属于校区">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.sysu_kg_hw13.com#校园"/>
+        <rdfs:range rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#学校 -->
+
+    <owl:Class rdf:about="http://www.sysu_kg_hw13.com#学校"/>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#学院 -->
+
+    <owl:Class rdf:about="http://www.sysu_kg_hw13.com#学院"/>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#校区 -->
+
+    <owl:Class rdf:about="http://www.sysu_kg_hw13.com#校区"/>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#校园 -->
+
+    <owl:Class rdf:about="http://www.sysu_kg_hw13.com#校园"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#中山医学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#中山医学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#中山大学 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#中山大学">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学校"/>
+        <学校包含校区 rdf:resource="http://www.sysu_kg_hw13.com#广州校区"/>
+        <学校包含校区 rdf:resource="http://www.sysu_kg_hw13.com#深圳校区"/>
+        <学校包含校区 rdf:resource="http://www.sysu_kg_hw13.com#珠海校区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#中法核工程与技术学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#中法核工程与技术学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#光华口腔医学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#光华口腔医学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#公共卫生学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#公共卫生学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#农学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#农学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#外国语学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#外国语学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#大气科学学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#大气科学学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#岭南学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#岭南学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#广州校区 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#广州校区">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+        <校区包含校园 rdf:resource="http://www.sysu_kg_hw13.com#广州校区东校园"/>
+        <校区包含校园 rdf:resource="http://www.sysu_kg_hw13.com#广州校区北校园"/>
+        <校区包含校园 rdf:resource="http://www.sysu_kg_hw13.com#广州校区南校园"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#广州校区东校园 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#广州校区东校园">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#校园"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#政治与公共事务管理学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#数据科学与计算机学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#法学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#广州校区北校园 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#广州校区北校园">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#校园"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#中山医学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#光华口腔医学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#公共卫生学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#广州校区南校园 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#广州校区南校园">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#校园"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#外国语学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#岭南学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#马克思主义学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#政治与公共事务管理学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#政治与公共事务管理学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#数据科学与计算机学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#数据科学与计算机学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#智能工程学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#智能工程学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#法学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#法学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#海洋工程与技术学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#海洋工程与技术学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#深圳校区 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#深圳校区">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#农学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#智能工程学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#航空航天学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#珠海校区 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#珠海校区">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#校区"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#中法核工程与技术学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#大气科学学院"/>
+        <校园包含学院 rdf:resource="http://www.sysu_kg_hw13.com#海洋工程与技术学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#航空航天学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#航空航天学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sysu_kg_hw13.com#马克思主义学院 -->
+
+    <owl:NamedIndividual rdf:about="http://www.sysu_kg_hw13.com#马克思主义学院">
+        <rdf:type rdf:resource="http://www.sysu_kg_hw13.com#学院"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
